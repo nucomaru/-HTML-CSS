@@ -1,7 +1,7 @@
 body{
     margin:0;
     padding:0;
-    
+    font-family:"游ゴシック, YuGothic, ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, Meiryo, ＭＳ Ｐゴシック, MS PGothic, sans-serif";
 }
 
 .header {
@@ -116,7 +116,7 @@ body{
 .object2{
   position:absolute;
   top:84px;
-  right: 822px;
+  right: 895px;
 }
 .object3{
   position:absolute;
@@ -162,15 +162,15 @@ body{
   justify-content: center;/*横真ん中*/
   align-items: center;/*縦真ん中*/
   text-decoration: none;
-  font-size: 15px;
-  letter-spacing:0.05em;
-  font-family:Arial;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight:700;
+  font-family:'游ゴシック';
   color: white;
   border-radius: 9999px;/*長円形*/
-  background-color: rgba(252, 123, 2, 0.966);
+  background-color: #F79214;
   width: 482px;
   height: 65px;
+  line-height: 1;
   }
 .main-button:hover{
     opacity: 0.8;}
@@ -181,7 +181,6 @@ body{
   font-size:12px;
   line-height:1.4;
   text-align:justify;
-  text-align-last:justify;
   top:575px;
   left:155px;
  }
@@ -189,27 +188,24 @@ body{
 
  @media screen and (max-width: 480px) {
   /* スマホ用スタイル */
-  body{
-  overflow-x:hidden;
-}
+
 .header {
   position:relative;
   top: 0px;
   left:0px;
   right:0px;
   width: 100%;
-  height: 37px;
+  height: 48px;
   background-color:white;
   box-shadow: 5px 5px 20px 4px rgba(144, 144, 144, 0.2); /*影*/
-  z-index:5;}
+  }
 
 .header-logo { /*左上ロゴ*/
   position: absolute;
-  width: 113px;
+  width: 149px;
   height: auto;
-  left: 12px; 
-  top: 12px;  
-  z-index:6; 
+  left:16px; 
+  top:16px;
 }
 .header-logo:hover{
     opacity: 0.8;
@@ -222,10 +218,10 @@ body{
 .hamburger-menu{
  position: absolute;
  display: block;/*noneに消されないように。本来はデフォルトでdisplay:block*/
- width: 14px;
- height:10px;
- top:9px;
- left:290px;
+ width: 18px;
+ height:2px;
+ top:13px;
+ right:20px;
 }
 
 .hamburger{ /*absoluteにすると3つ重なって固定されてしまうため、消す*/
@@ -233,8 +229,8 @@ body{
  background-color: #afafaf;
  border-radius: 10px;
  width:100%;
- height: 2px;
- margin:3px;
+ height:100%;
+ margin:4px;
 }
  
 
@@ -252,55 +248,67 @@ body{
  .main-background-phone img{
   display:block;
   width: 100%;
-  max-width: 480px; 
   height:auto;
  }
 
 
 
 .sub-visual{
-  position:relative;
-  width:120px;
-  left:1px;
+  position:absolute;
+  width:102px;
+  height:auto;
+  top:274px;
+  left:243px;
 }
 
 
 .main-text1{
   position:relative;
-  font-size: 18px;
-  font-family:'Noto Sans JP Black';
-  color:rgb(53, 53, 53);
-  top: 230px;
-  left: 13px;
-  line-height:1.5;
+  font-size: 22px;
+  font-family:"Lato, sans-serif";
+  font-weight:800;
+  color:#333;
+  top: 5px;
+  left: 16px;
+  line-height:1.65;
 }
 .main-button{
-  position:relative;
-  width:100%;
-  max-width: 480px; 
-  top:325px;
+ display:flex;
+ margin:0 auto;
+ width:100% !important;
+ left:auto;/*PC版での指示が適用されないように*/
+ margin-top:-75px;
 }
 .main-button a{
   display:flex;
-  justify-content: center;/*横真ん中*/
-  align-items: center;/*縦真ん中*/
-  text-decoration: none;
-  font-size: 15px;
-  letter-spacing:0.05em;
-  font-family:Arial;
-  font-weight: bold;
+  align-items: center;/*文字を真ん中に*/
+  justify-content: center;/*文字を真ん中に*/
+  margin:0 auto;/*ボタン中央揃え*/
+  background-color: #F79214;
   color: white;
   border-radius: 9999px;/*長円形*/
-  background-color: rgba(252, 123, 2, 0.966);
-  width:100%;
-  max-width:480px; 
-  height: 50px;
+  border:none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  width:92%;
+  height:64px;
+  text-decoration: none;
   }
+
 .main-button:hover{
     opacity: 0.8;}
 
 .sub-text{
-  text-align:center;
-  
+position: static !important; 
+left: 0 !important;          
+display: block; 
+width: 100%;                
+margin: 103px 0 0 0;          
+padding: 0 18px; 
+box-sizing: border-box; 
+text-align:left;        
+font-size:12px;
+line-height: 16px;
  }
-}
+
