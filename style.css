@@ -1,0 +1,301 @@
+body{
+    margin:0;
+    padding:0;
+    
+}
+
+.header {
+  position:relative;
+  font-family:'Arial';
+  top: 0px;
+  left:0px;
+  right:0px;
+  width: 100%;
+  height: 70px;
+  background-color:white;
+  box-shadow: 5px 5px 20px 4px rgba(144, 144, 144, 0.2); /*影*/
+  z-index:5;}
+
+.header-logo { /*左上ロゴ*/
+  position: absolute;
+  width: 185px;
+  height: auto;
+  left: 36px; 
+  top: 25px;  
+  z-index:6; /*header-menuにかぶってクリック不可とならぬよう*/
+}
+
+.header-logo:hover{
+    opacity: 0.8;
+}
+
+.header-menu{ /*上のメニュー部分*/
+    margin-top:0;
+    margin-right:35px; /*上と左右に隙間空けない*/
+    line-height: 0.9; /*行間詰める*/
+    display: flex;
+    gap: 47px;
+    position: relative;
+    align-items: center;/*高さを中央揃えに*/
+    top: 13px;
+    justify-content: flex-end;
+  }
+ .en{font-size:11px;}
+ .jp{font-size:10px;}
+
+  .header-menu-0 a{ /*PタグではなくAタグ指定！*/
+    text-decoration: none;
+    color: black;
+  }
+   .header-menu-0:hover{
+    opacity: 0.8; }
+
+  .header-menu-1 a{ /*PタグではなくAタグ指定！*/
+    text-decoration: none;
+    color: black;
+  }
+   .header-menu-1:hover{
+    opacity: 0.8;}
+
+  .header-menu-2 a{ /*PタグではなくAタグ指定！*/
+    text-decoration: none;
+    color: black;
+  }
+   .header-menu-2:hover{
+    opacity: 0.8;}
+
+  .header-menu-3 a{ /*PタグではなくAタグ指定！*/
+    text-decoration: none;
+    color: black;
+  }
+   .header-menu-3:hover{
+    opacity: 0.8;}
+ 
+ .header-menu-4 a{ /*PタグではなくAタグ指定！*/
+    text-decoration: none;
+    color: black;
+  }
+   .header-menu-4:hover{
+    opacity: 0.8;}
+
+ .header-button a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items:center;
+    top:10px;
+    border-radius: 9999px;/*長円形*/
+    width: 128px;
+    height: 40px;
+    background-color: rgba(252, 123, 2, 0.966);
+    padding-left:20px;
+  }
+   .header-button:hover{
+    opacity: 0.8;}
+
+  .hamburger-menu {
+    display: none; /*PCではハンバーガー非表示*/
+}
+
+.main-background{ /*もともとここにpadding70p入れてたた*/
+  position:relative;
+  width:100%;
+  background:white;
+}
+  
+.object1{
+  position:absolute; /*positionプロパティ指定しないと位置かえられない*/
+  top:0;
+  left:0;
+  width:auto;
+  height:278px;
+}
+
+.object2{
+  position:absolute;
+  top:84px;
+  right: 822px;
+}
+.object3{
+  position:absolute;
+  top:321px;
+  right:0;
+
+}
+.main-visual{
+  position:absolute;
+  width:57.5%;
+  height:auto;
+  top: -70px;
+  right: 0px;
+}
+.main-background-phone{
+  display:none;
+}
+
+.sub-visual{
+  position:absolute;
+  top:180px;
+  left:580px;
+}
+
+
+.main-text1{
+  position:absolute;
+  font-size: 42px;
+  font-family:'Noto Sans JP Black';
+  color:rgb(53, 53, 53);
+  top: 285px;
+  left: 155px;
+  line-height:1.5;
+}
+.main-button{
+  position:absolute;
+  top:493px;
+  left:155px;
+
+}
+.main-button a{
+  display:flex;
+  justify-content: center;/*横真ん中*/
+  align-items: center;/*縦真ん中*/
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing:0.05em;
+  font-family:Arial;
+  font-weight: bold;
+  color: white;
+  border-radius: 9999px;/*長円形*/
+  background-color: rgba(252, 123, 2, 0.966);
+  width: 482px;
+  height: 65px;
+  }
+.main-button:hover{
+    opacity: 0.8;}
+
+ .sub-text{
+  position:absolute;
+  font-family:'游ゴシック';
+  font-size:12px;
+  line-height:1.4;
+  text-align:justify;
+  text-align-last:justify;
+  top:575px;
+  left:155px;
+ }
+
+
+ @media screen and (max-width: 480px) {
+  /* スマホ用スタイル */
+  body{
+  overflow-x:hidden;
+}
+.header {
+  position:relative;
+  top: 0px;
+  left:0px;
+  right:0px;
+  width: 100%;
+  height: 37px;
+  background-color:white;
+  box-shadow: 5px 5px 20px 4px rgba(144, 144, 144, 0.2); /*影*/
+  z-index:5;}
+
+.header-logo { /*左上ロゴ*/
+  position: absolute;
+  width: 113px;
+  height: auto;
+  left: 12px; 
+  top: 12px;  
+  z-index:6; 
+}
+.header-logo:hover{
+    opacity: 0.8;
+}
+
+.header-menu{
+  display:none;
+}
+
+.hamburger-menu{
+ position: absolute;
+ display: block;/*noneに消されないように。本来はデフォルトでdisplay:block*/
+ width: 14px;
+ height:10px;
+ top:9px;
+ left:290px;
+}
+
+.hamburger{ /*absoluteにすると3つ重なって固定されてしまうため、消す*/
+ display:block; /*spanはデフォルト横並びなので、縦にする*/
+ background-color: #afafaf;
+ border-radius: 10px;
+ width:100%;
+ height: 2px;
+ margin:3px;
+}
+ 
+
+ .main-background {
+  display:none;
+ }
+ .object1, .object2, .object3, .main-visual {
+  display: none !important;
+  }
+
+ .main-background-phone img{
+  display:block;
+  width: 100%;
+  max-width: 480px; 
+  height:auto;
+ }
+
+
+
+.sub-visual{
+  position:relative;
+  width:120px;
+  left:1px;
+}
+
+
+.main-text1{
+  position:relative;
+  font-size: 18px;
+  font-family:'Noto Sans JP Black';
+  color:rgb(53, 53, 53);
+  top: 230px;
+  left: 13px;
+  line-height:1.5;
+}
+.main-button{
+  position:relative;
+  width:100%;
+  max-width: 480px; 
+  top:325px;
+}
+.main-button a{
+  display:flex;
+  justify-content: center;/*横真ん中*/
+  align-items: center;/*縦真ん中*/
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing:0.05em;
+  font-family:Arial;
+  font-weight: bold;
+  color: white;
+  border-radius: 9999px;/*長円形*/
+  background-color: rgba(252, 123, 2, 0.966);
+  width:100%;
+  max-width:480px; 
+  height: 50px;
+  }
+.main-button:hover{
+    opacity: 0.8;}
+
+.sub-text{
+  text-align:center;
+  
+ }
