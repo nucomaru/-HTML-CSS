@@ -245,6 +245,10 @@ body{
   display: none !important;
   }
 
+ .main-background-phone{
+  display:block;
+  width:100%;
+ }
  .main-background-phone img{
   display:block;
   width: 100%;
@@ -299,3 +303,4 @@ body{
   text-align:center;
   
  }
+}
