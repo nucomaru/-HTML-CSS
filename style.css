@@ -6,7 +6,6 @@ body{
 
 .header {
   position:relative;
-  font-family:'Arial';
   top: 0px;
   left:0px;
   right:0px;
@@ -273,17 +272,20 @@ body{
   line-height:1.65;
 }
 .main-button{
+ position:static;
  display:flex;
+ justify-content: center;
  margin:0 auto;
  width:100% !important;
+ top:auto;
  left:auto;/*PC版での指示が適用されないように*/
- margin-top:-75px;
+ margin:0 auto;
+ margin-top:22px;
 }
 .main-button a{
   display:flex;
   align-items: center;/*文字を真ん中に*/
   justify-content: center;/*文字を真ん中に*/
-  margin:0 auto;/*ボタン中央揃え*/
   background-color: #F79214;
   color: white;
   border-radius: 9999px;/*長円形*/
@@ -304,7 +306,7 @@ position: static !important;
 left: 0 !important;          
 display: block; 
 width: 100%;                
-margin: 103px 0 0 0;          
+margin: 15px 0 0 0;          
 padding: 0 18px; 
 box-sizing: border-box; 
 text-align:left;        
@@ -312,3 +314,4 @@ font-size:12px;
 line-height: 16px;
  }
 
+}
